@@ -1,1 +1,1 @@
-The openh264 module: integrates in baresip, as a dynamic library,  the OpenH264 video codec Version 1.4.0 provided by Cisco, furthermore it provides packetization functions for full Scalable Video Coding - SVC support specifed in RFC 6190.
+The openh264 module: integrates in [baresip](http://creytiv.com/baresip.html), as a dynamic library,  the [OpenH264](http://www.openh264.org/) video codec Version 1.4.0 provided by Cisco, furthermore it provides packetization functions for full Scalable Video Coding - SVC support specifed in RFC [6190](https://tools.ietf.org/html/rfc6190).
