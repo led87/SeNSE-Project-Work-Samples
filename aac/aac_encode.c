@@ -1,5 +1,5 @@
 /**
- * @file aac/encode.c AAC Encode using libfaac 
+ * @file aac/aac_encode.c AAC Encode using libfaac 
  *
  * Copyright (C) 2014 - 2015  Project SeNSE
  */
