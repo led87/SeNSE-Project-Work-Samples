@@ -5,6 +5,6 @@
 #
 
 MOD		:= YUV
-$(MOD)_SRCS	+= yuv420p.c
+$(MOD)_SRCS	+= yuv420p_src.c
 
 include mk/mod.mk
