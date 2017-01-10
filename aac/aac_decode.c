@@ -54,9 +54,9 @@ int aac_decode_update(struct audec_state **adsp, const struct aucodec *ac, const
 	if (!ads)
 		return ENOMEM;
 
-	ads->init = 0;
-	ads->parammeters.nSampleRate = ac->srate;
-	ads->parammeters.nChannels = ac->ch;
+	ads->init 			= 0;
+	ads->parammeters.nSampleRate 	= ac->srate;
+	ads->parammeters.nChannels 	= ac->ch;
 
 	ads->Decoder = faacDecOpen();
 	if (!ads->Decoder) 
@@ -71,10 +71,10 @@ int aac_decode_update(struct audec_state **adsp, const struct aucodec *ac, const
 
 	if(pConfiguration)
 	{
-		pConfiguration->outputFormat = FAAD_FMT_16BIT;
-		ads->SampleSize = 2;
-		pConfiguration->defSampleRate = ac->srate;
-		pConfiguration->defObjectType = LC;
+		pConfiguration->outputFormat 	= FAAD_FMT_16BIT;
+		ads->SampleSize 		= 2;
+		pConfiguration->defSampleRate 	= ac->srate;
+		pConfiguration->defObjectType 	= LC;
 	}
 
 	faacDecSetConfiguration(ads->Decoder, pConfiguration);
