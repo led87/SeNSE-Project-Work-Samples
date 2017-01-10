@@ -34,13 +34,11 @@ static void destructor(void *arg)
 
 int aac_decode_update(struct audec_state **adsp, const struct aucodec *ac, const char *fmtp)
 {
-
 	struct audec_state *ads;
 	faacDecConfigurationPtr pConfiguration;
 	int err = 0;
 
 	(void)fmtp;
-
 
 	if (!adsp || !ac || !ac->ch)
 		return EINVAL;
@@ -65,7 +63,6 @@ int aac_decode_update(struct audec_state **adsp, const struct aucodec *ac, const
 		err = ENOMEM;
 		goto out;
 	}
-
 
 	pConfiguration = faacDecGetCurrentConfiguration(ads->Decoder);
 
@@ -100,7 +97,6 @@ int aac_decode_frame(struct audec_state *ads, int16_t *sampv, size_t *sampc, con
 
 	if(!buf_len)
 		return 0;
-
 
 	if(!ads->init)
 	{
