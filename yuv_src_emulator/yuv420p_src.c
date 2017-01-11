@@ -1,5 +1,5 @@
 /**
- * @file yuv420p.c  Reads yuv420p video source from file.
+ * @file yuv420p_src.c  Emulates a video source by reading yuv420p images from raw video file.
  *
  * Copyright (C) 2015 SeNSE
  */
@@ -16,7 +16,7 @@
 #define YUV_WIDTH     640
 #define YUV_HEIGHT    480
 
-const YUVFileName = "/path_to_file/filename.........";
+const *YUVFileName = "/path_to_file/filename.........";
 
 const unsigned YUV_FPS = 25;
 
